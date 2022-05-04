@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body id="lmin">
+<body class="lmin">
 	
 <div class="container" >
 	<h4 id="player1_name"></h4>
@@ -31,13 +31,21 @@
 		<br>
 		<br>
 		<div id="output" class="col-lg-6"></div>
-		<label id="Number-come-number-go">Sent You Number: <b style="color: red" id="Number">Try putting Number which has 1 or more number</b></label>
+		<label id="Number-come-number-go">Send Your Number: <b style="color: red" id="Number">Try putting Number which has 1 or more number</b></label>
 
 		<br>
-		<input type="number" id="word" class="form-control" placeholder="Number 1">
+		<input type="number" id="number1" class="form-control" placeholder="Number 1">
         
-        <input type="number" id="word" class="form-control" placeholder="Number 2">
-		<button onclick="send()" class="btn btn-danger" style="width:30%;">Send</button>
+        <input type="number" id="number2" class="form-control" placeholder="Number 2">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Send</button>
+			<div id="myDropdown" class="dropdown-content">
+			  <button onclick ="send_add()">Add(+)</button>
+			  <button onclick ="send_sub()">Sub(-)</button>
+			  <button onclick ="send_mul()">Mul(×)</button>
+			  <button onclick ="send_div()">Div(÷)</button>
+			</div>
+		  </div>
 	</center>
 </div>
 
